@@ -10,7 +10,7 @@ public class ex05 {
         double price=scanner.nextDouble();
         double result=distance/efficiency*price;
         String formatted=String.format("%.3f",result);
-        System.out.println("The cost of driving is $"+formatted);
+        System.out.print("The cost of driving is $"+formatted);
 
     }
 }
