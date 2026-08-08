@@ -1,15 +1,18 @@
 import java.util.Scanner;
-public class ex11_l  {
+public class ex16_l  {
     public static void  main(String[] args){
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter a number: ");
         int num=scanner.nextInt();
-        for (int i=1;i<=num;i++){
-            for (int j=1;j<=num;j++)
-                System.out.print("*  ");
-            System.out.println();
-        }
+        int sum=0;
+        int i=0;
+        while(num!=0){
+            sum+=num%10*Math.pow(2,i);
+            i++;
+            num/=10;
 
+        }
+        System.out.println(sum);
 
         scanner.close();
     }
